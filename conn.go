@@ -374,7 +374,7 @@ func (c *conn) translatePacket(pk packet.Packet, serverSent bool) packet.Packet 
 				x.EntityUniqueID = c.translateUniqueID(x.EntityUniqueID, serverSent)
 				pk.TrackedObjects[i] = x
 			}
-		} // sa ben calci321 ana deprem oldu
+		}
 	case *packet.CommandBlockUpdate:
 		if !pk.Block {
 			pk.MinecartEntityRuntimeID = c.translateRuntimeID(pk.MinecartEntityRuntimeID, serverSent)
