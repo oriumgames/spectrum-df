@@ -12,7 +12,12 @@ require (
 	github.com/golang/snappy v1.0.0
 	github.com/google/uuid v1.6.0
 	github.com/quic-go/quic-go v0.57.1
-	github.com/sandertv/gophertunnel v1.51.0
+	github.com/sandertv/gophertunnel v1.51.1
+)
+
+replace (
+	github.com/df-mc/dragonfly => github.com/didntpot/dragonfly v0.0.0-20251210040245-615dfa19b65e
+	github.com/sandertv/gophertunnel => github.com/gopherhaven/cooldogedev-gophertunnel v0.0.0-20251212231856-68a99d08c01e
 )
 
 require (
